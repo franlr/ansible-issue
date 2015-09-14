@@ -1,4 +1,7 @@
 # ansible-issue
+
+[![Ansible Galaxy](https://img.shields.io/badge/galaxy-franlr--issue-blue.svg)](https://galaxy.ansible.com/list#/roles/5110)
+
 Manage the issue.net file as a MOTD file only if "Banner" sshd service's option has been enabled
 
 Requirements
@@ -17,9 +20,9 @@ A description of the settable variables for this role should go here, including 
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-```
-issue_content: "Organization: sample-organization"
-```
+| Name            | Default                           | Description                               |
+|-----------------|-----------------------------------|-------------------------------------------|
+| issue_content   | Organization: sample-organization | content of the issue file                 |
 
 Example
 -------
