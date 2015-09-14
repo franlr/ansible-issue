@@ -2,5 +2,5 @@
 # defaults/main.yml
 
 issue_info:
-  - "Organization: ": "sample-organization"
-  - "Region: ": "sample-region"
+  - "Organization: sample-organization"
+  - "Region: sample-region"
