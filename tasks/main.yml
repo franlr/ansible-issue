@@ -1,0 +1,8 @@
+---
+
+- name: issue.net configuration
+  template:
+    src: issue.j2
+    dest: /etc/issue.net
+  tags:
+    - issue_config
