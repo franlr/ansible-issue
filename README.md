@@ -18,9 +18,7 @@ A description of the settable variables for this role should go here, including 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
 ```
-issue_info:
-- "Organization: sample-organization"
-- "Region: sample-region"
+issue_content: "Organization: sample-organization"
 ```
 
 Example
@@ -32,9 +30,7 @@ Example
   # Load the role to produce the /etc/issue.net file
   roles:
     - role: ansible-issue
-      issue_info:
-        - "test1: string1"
-        - "test2: string2"
+      issue_content: "test1: string1"
 ```
 
 This playbook produces the `/etc/issue.net' file looking like this:
@@ -43,7 +39,6 @@ This playbook produces the `/etc/issue.net' file looking like this:
 [root@localhost ~]# cat /etc/issue.net
 
 test1: string1
-test2: string2
 
 ```
 
