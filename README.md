@@ -19,8 +19,8 @@ Available variables are listed below, along with default values (see `defaults/m
 
 ```
 issue_info:
-- "Organization: ": "sample-organization"
-- "Region: ": "sample-region"
+- "Organization: sample-organization"
+- "Region: sample-region"
 ```
 
 Example
@@ -33,8 +33,8 @@ Example
   roles:
     - role: ansible-issue
       issue_info:
-        - "test1: ": "string1"
-        - "test2: ": "string2"
+        - "test1: string1"
+        - "test2: string2"
 ```
 
 This playbook produces the `/etc/issue.net' file looking like this:
