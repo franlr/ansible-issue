@@ -1,8 +1,11 @@
 ---
 
-- name: issue.net configuration
+- name: issue setup
   template:
     src: issue.j2
-    dest: /etc/issue.net
+    dest: "/etc/{{ item }}"
+  with_items: 
+    - issue
+    - issue.net
   tags:
     - issue_config
