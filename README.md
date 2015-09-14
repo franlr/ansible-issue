@@ -26,13 +26,12 @@ Region: sample-region
 Role variables
 --------------
 
-
 License
 -------
 
-GPLV2
+Apache v2.0
 
-Author
-------
+Author Information
+------------------
 
-Fran LR
+This role was created in 2015 by [FranLR](https://github.com/franlr/)
