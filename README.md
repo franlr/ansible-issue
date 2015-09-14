@@ -28,7 +28,7 @@ Example
 
 ```
 # This is a playlist example
-- host: myhost
+- hosts: localhost
   # Load the role to produce the /etc/issue.net file
   roles:
     - role: ansible-issue
