@@ -1,0 +1,14 @@
+---
+
+galaxy_info:
+  author: Fran LR
+  description: Customizable issue.net
+  license: GPLV2
+  min_ansible_version: 1.6
+  platforms:
+    - name: EL
+      versions:
+        - all
+  categories:
+    - system
+dependencies: []
