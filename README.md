@@ -5,6 +5,24 @@ Requirements
 ------------
 This role requires Ansible 1.4 or higher.
 
+Dependencies
+------------
+
+Make enabled "Banner /etc/issue.net" in /etc/ssh/sshd_config
+
+Role Variables
+--------------
+
+A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml.
+
+Available variables are listed below, along with default values (see `defaults/main.yml`):
+
+```
+issue_info:
+- "Organization: ": "sample-organization"
+- "Region: ": "sample-region"
+```
+
 Example
 -------
 
@@ -13,7 +31,10 @@ Example
 - host: myhost
   # Load the role to produce the /etc/issue.net file
   roles:
-    - issue
+    - role: ansible-issue
+      issue_info:
+        - "test1: ": "string1"
+        - "test2: ": "string2"
 ```
 
 This playbook produces the `/etc/issue.net' file looking like this:
@@ -21,14 +42,10 @@ This playbook produces the `/etc/issue.net' file looking like this:
 ```
 [root@localhost ~]# cat /etc/issue.net
 
-Organization: sample-organization
-Region: sample-region
-
+test1: string1
+test2: string2
 
 ```
-
-Role variables
---------------
 
 License
 -------
