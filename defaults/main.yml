@@ -1,6 +1,4 @@
 ---
 # defaults/main.yml
 
-issue_info:
-  - "Organization: sample-organization"
-  - "Region: sample-region"
+issue_content: "Organization: sample-organization"
