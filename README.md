@@ -8,7 +8,7 @@ This role requires Ansible 1.4 or higher.
 Dependencies
 ------------
 
-Make enabled "Banner /etc/issue.net" in /etc/ssh/sshd_config
+Make enabled "Banner /etc/issue.net" in `/etc/ssh/sshd_config`
 
 Role Variables
 --------------
